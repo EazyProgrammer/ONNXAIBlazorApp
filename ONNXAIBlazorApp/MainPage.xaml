@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ONNXAIBlazorApp"
+             x:Class="ONNXAIBlazorApp.MainPage"
+             BackgroundColor="White">
+
+    <!--<BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <BlazorWebView.RootComponents>
+            <RootComponent Selector="#app" ComponentType="{x:Type local:Components.Routes}" />
+        </BlazorWebView.RootComponents>
+    </BlazorWebView>-->
+
+    <StackLayout Padding="20">
+        <!-- Upload Button -->
+        <Button Text="Upload Excel File" Clicked="OnUploadButtonClicked" TextColor="Black" BackgroundColor="LightGray" />
+        
+        <!-- Query Input -->
+        <Entry x:Name="QueryInput" Placeholder="Enter your query..." TextColor="Black" />
+
+        <!-- Query Button -->
+        <Button Text="Ask Question" Clicked="OnQueryButtonClicked" TextColor="Black" BackgroundColor="LightGray" />
+
+        <!-- Query Result -->
+        <Label x:Name="QueryResultLabel" FontSize="Medium" TextColor="Black" />
+    </StackLayout>
+
+</ContentPage>
